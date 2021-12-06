@@ -1,0 +1,78 @@
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #00ffff;
+    color: black;
+}
+
+.bloc-page img {
+    margin-left: -100px;
+}
+
+nav {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid white;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 525px;
+}
+
+nav h1 {
+    color: black;
+    font-size: 30px;
+}
+
+nav .onglets {
+    margin-top: 3px;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+}
+
+nav .onglets a:hover {
+    color: purple;
+    border-bottom: 3px solid purple;
+    cursor: grab;
+}
+
+nav img {
+    width: 90px;
+}
+
+@media screen and (max-width:680px) {
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Header */ 
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    margin-top: 15px;
+}
+
+header h3 {
+    margin-top: 15px;
+}
+
+/* Footer */ 
