@@ -1,0 +1,198 @@
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #00bfff;
+    color: white;
+    animation-name: couleur, essuieglace, taille;
+    animation-duration: 3s, 2s;
+}
+
+@keyframes couleur{
+    from{background-color: rgb(112, 69, 141);}
+    to{background-color: #00bfff;}
+}
+
+@keyframes taille{
+    from{width: 165%}
+    to{width: 100%;} 
+}
+@keyframes essuieglace{
+    from{margin-top: 0px;}
+    50%{margin-top: 50px;}
+    to{margin-top : 0px;}
+}
+
+.bloc-page img {
+    margin-left: -100px;
+}
+
+nav {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 620px;
+    border-bottom: 5px solid #4169E1;
+}
+
+nav h1 {
+    margin-right: auto;
+    margin-left: 100px;
+    margin-top: 30px;
+    font: small-caps bold 30px/1 sans-serif;
+}
+
+nav .onglets {
+    margin-top: 30px;
+    position: fixed;
+    background-color: #1E90FF;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+nav .onglets a:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+nav img {
+    width: 90px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 3px;
+    position: fixed;
+}
+
+nav img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+@media screen and (max-width:680px) {
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    body  {
+        color: black;
+    }
+
+    .forma {
+        z-index: auto;
+    }
+}
+
+.exp, .exp2 {
+    display: block;
+    flex-wrap: wrap;
+    width: 1100px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: 750px;
+    background-color: #4169E1;
+    border-radius: 30px;
+    margin-top: 150px;
+}
+
+.exp2 {
+    margin-top: -60px;
+    height: 225px;
+}
+
+.exp h2, .exp2 h2, .forma h2 {
+    font: italic small-caps bold 25px/2 cursive;
+}
+
+
+.contenuexp, .contenuexp2 {
+    flex-wrap: wrap;
+    font-size: 22px;
+    margin-top: 15px;
+    font-family: system-ui;
+}
+
+.forma {
+    display: block;
+    position: relative;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 180px;
+    margin-left: 950px;
+    margin-right: 800px;
+    background-color: #4169E1;
+    border-radius: 30px;
+    margin-top: -60px;
+}
+
+.contenuforma {
+    flex-wrap: wrap;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-right: 350px;
+    font-family: system-ui;
+}
+
+.contenuforma .coin {
+    position: absolute;
+    margin-left: 220px;
+}
+
+/* Header */ 
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    margin-top:100px;
+}
+
+header h3 {
+    margin-top: 15px;
+}
+
+/* Footer */ 
+
+footer  {
+    text-align: center;
+    margin-top: 100px;
+}
+footer button {
+    padding: 30px;
+    cursor: grab;
+    align-items: center;
+    background-color: #4169E1;
+    border-radius: 30px;
+    border-color: black;
+}
+
+footer a {
+    text-decoration: none;    
+    color: black;
+}
